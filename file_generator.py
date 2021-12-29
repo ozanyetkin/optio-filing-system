@@ -6,6 +6,9 @@ land_no = input("Please Enter Land Number for the Project: ")
 parcel_no = input("Please Enter Parcel Number for the Project: ")
 project_name = input("Please Enter Short Name for the Project: ").upper()
 
+while len(project_name) > 4:
+    project_name = input("Please Use Max 4 Characters for Short Name: ").upper()
+
 base_directory_name = land_no + "_" + parcel_no + "_" + project_name
 
 try:
